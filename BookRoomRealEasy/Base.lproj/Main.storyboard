@@ -208,7 +208,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Gsg-5e-PRp" kind="show" identifier="BOOK_RESERVATION" id="Wt7-Y7-fqM"/>
+                                            <segue destination="JDU-Gq-2qk" kind="show" identifier="SHOW_RESERVATION_LIST" id="1rk-yJ-lCl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -229,6 +229,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nQ-YO-DMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1054" y="-428"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="XDp-nE-uwb">
+            <objects>
+                <viewController id="JDU-Gq-2qk" customClass="ReservationListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oo5-ad-KKd"/>
+                        <viewControllerLayoutGuide type="bottom" id="oQ4-y2-s3h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tig-BQ-vMN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kAO-N5-zET">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RESERVATION_CELL" id="gPA-5K-yqz">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gPA-5K-yqz" id="LGK-C3-dfS">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oQ4-y2-s3h" firstAttribute="top" secondItem="kAO-N5-zET" secondAttribute="bottom" id="9hu-sG-I91"/>
+                            <constraint firstItem="kAO-N5-zET" firstAttribute="top" secondItem="Tig-BQ-vMN" secondAttribute="topMargin" id="dbA-h8-aXQ"/>
+                            <constraint firstItem="kAO-N5-zET" firstAttribute="leading" secondItem="Tig-BQ-vMN" secondAttribute="leadingMargin" constant="-16" id="hsg-DH-63c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kAO-N5-zET" secondAttribute="trailing" constant="-16" id="l1t-aQ-SeM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="EKo-HG-2fO">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="hHB-AW-0Qb">
+                            <connections>
+                                <segue destination="Gsg-5e-PRp" kind="presentation" identifier="ADD_RESERVATION" id="rel-tu-WQG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="kAO-N5-zET" id="ivf-eu-6HK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syt-pS-e2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715" y="-428"/>
         </scene>
         <!--Reservation View Controller-->
         <scene sceneID="SFK-IP-ym4">
@@ -300,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xX-Zx-5fk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708" y="-428"/>
+            <point key="canvasLocation" x="2375" y="-428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GJ9-Li-4gH">

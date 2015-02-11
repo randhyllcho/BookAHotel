@@ -46,7 +46,7 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-  if ([segue.identifier isEqualToString:@"BOOK_RESERVATION"]) {
+  if ([segue.identifier isEqualToString:@"SHOW_RESERVATION_LIST"]) {
     ReservationViewController *reservationVC = segue.destinationViewController;
     NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
     Room *room = self.rooms[indexPath.row];

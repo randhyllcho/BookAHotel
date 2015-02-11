@@ -9,6 +9,7 @@
 #import "ReservationViewController.h"
 #import "Reservation.h"
 #import "Guest.h"
+#import "HotelService.h"
 
 @interface ReservationViewController ()
 @property (weak, nonatomic) IBOutlet UIDatePicker *startDatePicker;
@@ -28,19 +29,19 @@
   
 }
 - (IBAction)bookNowButonPressed:(id)sender {
-  Reservation *reservation = [NSEntityDescription insertNewObjectForEntityForName:@"Reservation" inManagedObjectContext:self.selectedRoom.managedObjectContext];
-  
+  Reservation *reservation = [NSEntityDescription insertNewObjectForEntityForName:@"Reservation" inManagedObjectContext:[[HotelService sharedService] coreDataStack].managedObjectContext];
   reservation.checkIn = self.startDatePicker.date;
   reservation.checkOut = self.checkoutDatePicker.date;
   reservation.room = self.selectedRoom;
-  
-  Guest *guest = [NSEntityDescription insertNewObjectForEntityForName:@"Guest" inManagedObjectContext:self.selectedRoom.managedObjectContext];
+
+  Guest *guest = [NSEntityDescription insertNewObjectForEntityForName:@"Guest" inManagedObjectContext:[[HotelService sharedService] coreDataStack].managedObjectContext];
   guest.firsName = @"Ryan";
   guest.lastName = @"Christensen";
   reservation.guest = guest;
+  [self dismissViewControllerAnimated:true completion:nil];
   
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Guest: %@ %@", guest.firsName, guest.lastName] message:@"Room Booked" delegate:self cancelButtonTitle:@"Awesome!" otherButtonTitles:nil, nil];
-  [alert show];
+//  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Guest: %@ %@", guest.firsName, guest.lastName] message:@"Room Booked" delegate:self cancelButtonTitle:@"Awesome!" otherButtonTitles:nil, nil];
+//  [alert show];
   
   //NSLog(@"%lu",(unsigned long)self.selectedRoom.reservations.count);
   

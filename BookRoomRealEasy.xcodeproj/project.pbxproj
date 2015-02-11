@@ -10,6 +10,7 @@
 		3222E7751A8AC7C6003E6DC7 /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3222E7741A8AC7C6003E6DC7 /* AvailabilityViewController.m */; };
 		3222E7781A8BF64F003E6DC7 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3222E7771A8BF64F003E6DC7 /* CoreDataStack.m */; };
 		3222E77B1A8BF939003E6DC7 /* HotelService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3222E77A1A8BF939003E6DC7 /* HotelService.m */; };
+		3222E77E1A8C0B14003E6DC7 /* ReservationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3222E77D1A8C0B14003E6DC7 /* ReservationListViewController.m */; };
 		3230C1811A894DD4003D9DBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3230C1801A894DD4003D9DBC /* main.m */; };
 		3230C1841A894DD4003D9DBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3230C1831A894DD4003D9DBC /* AppDelegate.m */; };
 		3230C1871A894DD4003D9DBC /* BookRoomRealEasy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3230C1851A894DD4003D9DBC /* BookRoomRealEasy.xcdatamodeld */; };
@@ -46,6 +47,8 @@
 		3222E7771A8BF64F003E6DC7 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		3222E7791A8BF939003E6DC7 /* HotelService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelService.h; sourceTree = "<group>"; };
 		3222E77A1A8BF939003E6DC7 /* HotelService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelService.m; sourceTree = "<group>"; };
+		3222E77C1A8C0B14003E6DC7 /* ReservationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationListViewController.h; sourceTree = "<group>"; };
+		3222E77D1A8C0B14003E6DC7 /* ReservationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationListViewController.m; sourceTree = "<group>"; };
 		3230C17B1A894DD4003D9DBC /* BookRoomRealEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookRoomRealEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3230C17F1A894DD4003D9DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3230C1801A894DD4003D9DBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				3222E7741A8AC7C6003E6DC7 /* AvailabilityViewController.m */,
 				3230C1D91A8AAD50003D9DBC /* ReservationViewController.h */,
 				3230C1DA1A8AAD50003D9DBC /* ReservationViewController.m */,
+				3222E77C1A8C0B14003E6DC7 /* ReservationListViewController.h */,
+				3222E77D1A8C0B14003E6DC7 /* ReservationListViewController.m */,
 				3230C1CD1A895B31003D9DBC /* HotelListViewController.h */,
 				3230C1CE1A895B31003D9DBC /* HotelListViewController.m */,
 				3230C18B1A894DD4003D9DBC /* Main.storyboard */,
@@ -288,6 +293,7 @@
 				3230C1CA1A89524A003D9DBC /* Guest.m in Sources */,
 				3230C18A1A894DD4003D9DBC /* ViewController.m in Sources */,
 				3230C1C71A89524A003D9DBC /* Reservation.m in Sources */,
+				3222E77E1A8C0B14003E6DC7 /* ReservationListViewController.m in Sources */,
 				3222E77B1A8BF939003E6DC7 /* HotelService.m in Sources */,
 				3230C1DB1A8AAD50003D9DBC /* ReservationViewController.m in Sources */,
 				3230C1D81A896763003D9DBC /* RoomViewController.m in Sources */,

@@ -32,7 +32,7 @@
 -(instancetype)initForTesting {
   self = [super init];
   if (self) {
-    self.coreDataStack =[[CoreDataStack alloc] initFortesting];
+    self.coreDataStack =[[CoreDataStack alloc] initForTesting];
   }
   return self;
 }
