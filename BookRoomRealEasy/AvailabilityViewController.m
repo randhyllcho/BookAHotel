@@ -9,9 +9,10 @@
 #import "AvailabilityViewController.h"
 #import "AppDelegate.h"
 #import "Reservation.h"
+#import "HotelService.h"
 
 @interface AvailabilityViewController () <UIAlertViewDelegate>
-@property (strong, nonatomic) NSManagedObjectContext *context;
+//@property (strong, nonatomic) NSManagedObjectContext *context;
 @property (weak, nonatomic) IBOutlet UIDatePicker *startDatePicker;
 @property (weak, nonatomic) IBOutlet UIDatePicker *endDatePicker;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
@@ -21,9 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-  self.context = appDelegate.managedObjectContext;
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,7 +41,7 @@
   reservationFetch.predicate = reservationPredicate;
   NSError *fetchError;
   
-  NSArray *results = [self.context executeFetchRequest:reservationFetch error:&fetchError];
+  NSArray *results = [[[HotelService sharedService] coreDataStack].managedObjectContext executeFetchRequest:reservationFetch error:&fetchError];
   
   NSMutableArray *rooms = [NSMutableArray new];
   for (Reservation *reservation in results) {
@@ -54,7 +52,7 @@
   NSPredicate *roomsPredicate = [NSPredicate predicateWithFormat:@"hotel.name MATCHES %@ AND NOT (self IN %@)",selectedHotel, rooms];
   anotherFetchRequest.predicate = roomsPredicate;
   NSError *roomsError;
-  NSArray *roomsResults = [self.context executeFetchRequest:anotherFetchRequest error:&roomsError];
+  NSArray *roomsResults = [[[HotelService sharedService] coreDataStack].managedObjectContext executeFetchRequest:anotherFetchRequest error:&roomsError];
   if (roomsError) {
     NSLog(@"%@", roomsError.localizedDescription);
   }
