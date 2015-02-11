@@ -7,8 +7,8 @@
 //
 
 #import "RoomViewController.h"
-#import "Hotel.h"
 #import "Room.h"
+#import "ReservationViewController.h"
 
 @interface RoomViewController () <UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -43,6 +43,15 @@
   NSString *roomNumber = [NSString stringWithFormat:@"%@", currentRoom.number];
   cell.textLabel.text = roomNumber;
   return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+  if ([segue.identifier isEqualToString:@"BOOK_RESERVATION"]) {
+    ReservationViewController *reservationVC = segue.destinationViewController;
+    NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
+    Room *room = self.rooms[indexPath.row];
+    reservationVC.selectedRoom = room;
+  }
 }
 /*
 #pragma mark - Navigation
