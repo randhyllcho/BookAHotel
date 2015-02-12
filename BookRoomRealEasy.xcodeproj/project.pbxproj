@@ -28,6 +28,7 @@
 		3230C1D51A89617A003D9DBC /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3230C1D41A89617A003D9DBC /* MainMenuTableViewController.m */; };
 		3230C1D81A896763003D9DBC /* RoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3230C1D71A896763003D9DBC /* RoomViewController.m */; };
 		3230C1DB1A8AAD50003D9DBC /* ReservationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3230C1DA1A8AAD50003D9DBC /* ReservationViewController.m */; };
+		328D50B31A8C7D0E001710C4 /* HotelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 328D50B21A8C7D0E001710C4 /* HotelTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		3230C1D71A896763003D9DBC /* RoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomViewController.m; sourceTree = "<group>"; };
 		3230C1D91A8AAD50003D9DBC /* ReservationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationViewController.h; sourceTree = "<group>"; };
 		3230C1DA1A8AAD50003D9DBC /* ReservationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationViewController.m; sourceTree = "<group>"; };
+		328D50B21A8C7D0E001710C4 /* HotelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelTest.m; path = ../BookRoomRealEasy/HotelTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				3230C19D1A894DD4003D9DBC /* BookRoomRealEasyTests.m */,
+				328D50B21A8C7D0E001710C4 /* HotelTest.m */,
 				3230C19B1A894DD4003D9DBC /* Supporting Files */,
 			);
 			path = BookRoomRealEasyTests;
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328D50B31A8C7D0E001710C4 /* HotelTest.m in Sources */,
 				3230C19E1A894DD4003D9DBC /* BookRoomRealEasyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
