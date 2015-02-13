@@ -47,7 +47,7 @@
   
   NSError *saveError;
   [self.coreDataStack.managedObjectContext save:&saveError];
-  if (saveError) {
+  if (!saveError) {
     return reservation;
   } else {
     return nil;

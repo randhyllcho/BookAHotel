@@ -72,9 +72,9 @@
    cell.textLabel.text = [NSString stringWithFormat:@"Room: %@ ", reservation.room.number];
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-  return [[self.fetchedResultsController sections] count];
-}
+//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//  return [[self.fetchedResultsController sections] count];
+//}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   NSArray *sections = [self.fetchedResultsController sections];

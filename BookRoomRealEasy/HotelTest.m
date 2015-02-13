@@ -63,7 +63,7 @@
   NSDate *endDate = [calander dateByAddingComponents:components toDate:startDate options:0];
   
   Reservation *reservation = [self.hotelService bookReservationForGuest:self.guest ForRoom:self.room checkIn:startDate checkOut:endDate];
-  XCTAssert(reservation, @"Should prolly make a rez partner...");
+  XCTAssertNotNil(reservation, @"Should prolly make a rez partner...");
   
 }
 
