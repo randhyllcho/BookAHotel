@@ -22,14 +22,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotels" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-iX-g1I">
-                                                    <rect key="frame" x="8" y="11" width="49.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="16" y="11" width="47" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="gPc-iX-g1I" firstAttribute="leading" secondItem="SOH-dz-OCZ" secondAttribute="leadingMargin" id="Ko8-lD-ZX2"/>
+                                                <constraint firstItem="gPc-iX-g1I" firstAttribute="leading" secondItem="SOH-dz-OCZ" secondAttribute="leadingMargin" constant="8" id="Ko8-lD-ZX2"/>
                                                 <constraint firstItem="gPc-iX-g1I" firstAttribute="top" secondItem="SOH-dz-OCZ" secondAttribute="topMargin" constant="3" id="pe8-nD-BXI"/>
                                             </constraints>
                                         </tableViewCellContentView>

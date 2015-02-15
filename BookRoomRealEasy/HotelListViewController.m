@@ -13,7 +13,7 @@
 #import "HotelService.h"
 
 
-@interface HotelListViewController () <UITableViewDataSource>
+@interface HotelListViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *hotels;
 
@@ -26,15 +26,13 @@
   self.tableView.dataSource = self;
   
   
-//  AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-//  NSManagedObjectContext *context = appDelegate.managedObjectContext;
-  
   NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Hotel"];
   NSError *fetchError;
 
   NSArray *results = [[[HotelService sharedService] coreDataStack].managedObjectContext executeFetchRequest:fetchRequest error:&fetchError];
+
+  NSLog(@"%lu", (unsigned long)results.count);
   
-//  NSArray *results = [context executeFetchRequest:fetchRequest error:&fetchError];
   if (!fetchError) {
     self.hotels = results;
     [self.tableView reloadData];

@@ -31,7 +31,7 @@
   
   self.hotelService = [[HotelService alloc] initForTesting];
   self.hotel = [NSEntityDescription insertNewObjectForEntityForName:@"Hotel" inManagedObjectContext:self.hotelService.coreDataStack.managedObjectContext];
-  self.hotel.name = @"An Place";
+  self.hotel.name = @"This Hotel";
   self.hotel.location = @"This Place";
   self.hotel.rating = @1;
   

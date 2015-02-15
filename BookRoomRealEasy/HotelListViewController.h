@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HotelListViewController : UIViewController
+@interface HotelListViewController : UIViewController <UITableViewDataSource>
 
 @end

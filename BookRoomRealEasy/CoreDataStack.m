@@ -32,6 +32,14 @@
   return self;
 }
 
+-(instancetype)init {
+  self = [super init];
+  if (self) {
+    [self seedDataBaseIfNeeded];
+  }
+  return self;
+}
+
 -(void)seedDataBaseIfNeeded {
   NSFetchRequest *fetchRequest  = [[NSFetchRequest alloc] initWithEntityName:@"Hotel"];
   NSError *fetchError;
