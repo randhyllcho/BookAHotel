@@ -9,10 +9,11 @@
         <scene sceneID="ksb-YF-e1R">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="QwN-31-efP" customClass="MainMenuTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="DQq-MB-4Fc">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DQq-MB-4Fc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.83926990359999998" green="1" blue="0.83078076570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.90959288729999999" green="0.97067349550000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="93W-Dm-3X4">
                                 <cells>
@@ -22,9 +23,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotels" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-iX-g1I">
-                                                    <rect key="frame" x="16" y="11" width="47" height="19.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <rect key="frame" x="16" y="11" width="55" height="26"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                                    <color key="textColor" red="0.0" green="0.019482139589999999" blue="0.76162010729999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -33,6 +34,7 @@
                                                 <constraint firstItem="gPc-iX-g1I" firstAttribute="top" secondItem="SOH-dz-OCZ" secondAttribute="topMargin" constant="3" id="pe8-nD-BXI"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.83926990359999998" green="1" blue="0.83078076570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" identifier="SHOW_HOTELS" id="42Q-yZ-MCq"/>
                                         </connections>
@@ -44,21 +46,17 @@
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Check Availability" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0mZ-Mn-xqF">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                                    <color key="textColor" red="0.0" green="0.019482139589999999" blue="0.76162010729999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.83926990359999998" green="1" blue="0.83078076570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.83926990359999998" green="1" blue="0.83078076570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="GwX-Do-VnV" kind="show" identifier="CHECK_AVAIL" id="pMh-vZ-BtY"/>
                                         </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gLn-fQ-ugi">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gLn-fQ-ugi" id="uqs-XI-tOl">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -118,7 +116,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90959288729999999" green="0.97067349550000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="3dV-80-dLh" secondAttribute="centerX" id="4VE-ya-pbY"/>
                             <constraint firstItem="gdb-mL-OPk" firstAttribute="top" secondItem="L3E-5h-1Xh" secondAttribute="bottom" constant="99" id="5oD-h9-7Cp"/>
@@ -154,14 +152,23 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wfy-vC-J7s">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.40000000000000002" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HOTEL_CELL" id="MFo-ce-amJ">
+                                    <tableViewCell alpha="0.69999999999999973" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HOTEL_CELL" textLabel="8xu-sn-T7L" style="IBUITableViewCellStyleDefault" id="MFo-ce-amJ">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MFo-ce-amJ" id="ans-Bm-PSg">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8xu-sn-T7L">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.95686274509803926" green="0.40000000000000002" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="Crx-E8-GuE" kind="show" identifier="SHOW_ROOMS" id="pef-Dk-q54"/>
                                         </connections>
@@ -199,14 +206,23 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9HX-tV-vsh">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.79215686269999996" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ROOM_DETAIL" id="C5T-39-Raq">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ROOM_DETAIL" textLabel="nRG-bq-XqT" style="IBUITableViewCellStyleDefault" id="C5T-39-Raq">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C5T-39-Raq" id="9NE-TL-gfv">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nRG-bq-XqT">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="30"/>
+                                                    <color key="textColor" red="0.41524206042119238" green="0.97254901959999995" blue="0.8469493637923059" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.80784313730000001" green="0.79215686269999996" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="JDU-Gq-2qk" kind="show" identifier="SHOW_RESERVATION_LIST" id="1rk-yJ-lCl"/>
                                         </connections>
@@ -230,7 +246,7 @@
             </objects>
             <point key="canvasLocation" x="1054" y="-428"/>
         </scene>
-        <!--Title-->
+        <!--Booked Rooms-->
         <scene sceneID="XDp-nE-uwb">
             <objects>
                 <viewController id="JDU-Gq-2qk" customClass="ReservationListViewController" sceneMemberID="viewController">
@@ -244,14 +260,23 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kAO-N5-zET">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.79215686269999996" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RESERVATION_CELL" id="gPA-5K-yqz">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RESERVATION_CELL" textLabel="7i1-xv-OIF" style="IBUITableViewCellStyleDefault" id="gPA-5K-yqz">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gPA-5K-yqz" id="LGK-C3-dfS">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7i1-xv-OIF">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="18"/>
+                                                    <color key="textColor" red="0.4152420604" green="0.97254901959999995" blue="0.84694936379999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.80784313730000001" green="0.79215686269999996" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -264,8 +289,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="kAO-N5-zET" secondAttribute="trailing" constant="-16" id="l1t-aQ-SeM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="EKo-HG-2fO">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="hHB-AW-0Qb">
+                    <navigationItem key="navigationItem" title="Booked Rooms" id="EKo-HG-2fO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hHB-AW-0Qb">
+                            <color key="tintColor" red="0.0" green="0.019482139589999999" blue="0.76162010729999996" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="Gsg-5e-PRp" kind="presentation" identifier="ADD_RESERVATION" id="rel-tu-WQG"/>
                             </connections>
@@ -327,7 +353,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90959288729999999" green="0.97067349550000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="3I0-Xf-hn5" secondAttribute="centerX" id="88Z-4s-WCt"/>
                             <constraint firstItem="YbG-T4-9qV" firstAttribute="top" secondItem="77a-2H-QeQ" secondAttribute="bottom" constant="8.5" id="92v-Hs-Ipe"/>

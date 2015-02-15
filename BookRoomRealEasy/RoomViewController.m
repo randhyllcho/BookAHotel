@@ -21,6 +21,12 @@
     [super viewDidLoad];
   self.tableView.dataSource = self;
   self.rooms = self.hotel.rooms.allObjects;
+  
+  NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Room"];
+  NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"number" ascending:true];
+  
+  fetchRequest.sortDescriptors = @[sortDescriptor];
+  
   // Do any additional setup after loading the view.
 }
 
